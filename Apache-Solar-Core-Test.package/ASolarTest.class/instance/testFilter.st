@@ -1,0 +1,16 @@
+tests
+testFilter
+	"an ASolarClient"
+	|solr|	
+	solr := ASolarClient host: '172.16.208.136' port:8983 username:'admin' password:'admin'.
+	solr core:'techproducts'.
+	solr query:[ :query|
+				query q: ('manu'->'A*'); 
+						fl: #( #name #manu #inStock #price);
+ 						qf: {	'name'! 0.2.
+								'price'!3.3 };
+						fq: #price -> (0 TO: 600);
+						mm:2;
+						start:0;
+						rows:10];
+			searchAndCallback:[:r| r inspect]
