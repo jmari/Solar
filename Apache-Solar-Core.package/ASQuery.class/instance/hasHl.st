@@ -1,0 +1,3 @@
+factory
+hasHl
+	^ hl notNil

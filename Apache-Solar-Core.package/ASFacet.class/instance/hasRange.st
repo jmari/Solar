@@ -1,0 +1,3 @@
+testing
+hasRange
+	^ range notNil

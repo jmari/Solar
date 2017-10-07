@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "String",
+	"category" : "Apache-Solar-Core-SpecialTypes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ASBoostOperator",
+	"type" : "normal"
+}

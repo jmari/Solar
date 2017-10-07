@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "ASParameter",
+	"category" : "Apache-Solar-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"facet",
+		"group",
+		"mlt",
+		"hl"
+	],
+	"name" : "ASQuery",
+	"type" : "normal"
+}

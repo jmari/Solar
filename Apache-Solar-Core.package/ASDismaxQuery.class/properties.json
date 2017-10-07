@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ASQuery",
+	"category" : "Apache-Solar-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ASDismaxQuery",
+	"type" : "normal"
+}

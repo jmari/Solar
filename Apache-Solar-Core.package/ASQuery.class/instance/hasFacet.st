@@ -1,0 +1,3 @@
+factory
+hasFacet
+	^ facet notNil

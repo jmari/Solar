@@ -1,0 +1,3 @@
+factory
+hasGroup
+	^ group notNil

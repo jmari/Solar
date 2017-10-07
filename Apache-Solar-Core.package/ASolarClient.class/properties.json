@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Apache-Solar-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"httpClient",
+		"host",
+		"port",
+		"core",
+		"path",
+		"query",
+		"globalParameters",
+		"fieldParameters"
+	],
+	"name" : "ASolarClient",
+	"type" : "normal"
+}

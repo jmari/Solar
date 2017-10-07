@@ -1,0 +1,3 @@
+testing
+hasInterval
+	^ interval notNil

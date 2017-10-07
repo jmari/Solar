@@ -1,0 +1,4 @@
+factory
+hasFieldParameters
+	
+	^ fieldParameters notNil

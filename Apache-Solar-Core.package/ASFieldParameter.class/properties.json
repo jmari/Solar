@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ASGlobalParameter",
+	"category" : "Apache-Solar-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fieldName",
+		"facet"
+	],
+	"name" : "ASFieldParameter",
+	"type" : "normal"
+}

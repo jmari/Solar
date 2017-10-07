@@ -1,0 +1,4 @@
+factory
+hasGlobalParameters
+	
+	^ globalParameters notNil
