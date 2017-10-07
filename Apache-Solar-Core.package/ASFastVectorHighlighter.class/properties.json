@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "ASGlobalParameter",
+	"super" : "ASHighlighting",
 	"category" : "Apache-Solar-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"fieldName",
-		"facet",
-		"hl"
-	],
-	"name" : "ASFieldParameter",
+	"instvars" : [ ],
+	"name" : "ASFastVectorHighlighter",
 	"type" : "normal"
 }
