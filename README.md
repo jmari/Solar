@@ -1,6 +1,14 @@
 # Solar
 an Apache Solr client API for Smalltalk
 
+### install Solar
+```Smalltalk
+Metacello new 
+	baseline: 'Solar';
+	repository: 'github://jmari/Solar';
+	load:'all'
+```
+
 Some examples:
 
 ### Solar query example
