@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ASParameter",
-	"category" : "Apache-Solar-Core",
+	"category" : "Apache-Solar-Core-Facet",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

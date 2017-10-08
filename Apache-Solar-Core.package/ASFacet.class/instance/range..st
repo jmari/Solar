@@ -1,4 +1,4 @@
-accessing
+factory methods
 range: aRangeBlock
 	(aRangeBlock isKindOf: BlockClosure )
 			ifTrue:[ 	aRangeBlock value: self range ]

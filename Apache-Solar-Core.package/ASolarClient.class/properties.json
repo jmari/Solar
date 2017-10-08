@@ -13,7 +13,8 @@
 		"path",
 		"query",
 		"globalParameters",
-		"fieldParameters"
+		"fieldParameters",
+		"spell"
 	],
 	"name" : "ASolarClient",
 	"type" : "normal"

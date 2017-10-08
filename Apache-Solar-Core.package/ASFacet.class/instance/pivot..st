@@ -1,4 +1,4 @@
-accessing
+factory methods
 pivot: aPivotBlock
 		(aPivotBlock isKindOf: BlockClosure )
 			ifTrue:[ 	aPivotBlock value: self pivot ]

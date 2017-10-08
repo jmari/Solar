@@ -1,0 +1,3 @@
+testing
+hasCollateParam
+	^ collateParam notNil

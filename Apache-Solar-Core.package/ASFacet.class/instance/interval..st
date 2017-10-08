@@ -1,4 +1,4 @@
-accessing
+factory methods
 interval: anIntervalBlock
 		(anIntervalBlock isKindOf: BlockClosure )
 			ifTrue:[ 	anIntervalBlock value: self interval ]

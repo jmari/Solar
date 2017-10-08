@@ -1,3 +1,3 @@
 private
 tagField
-	^ ''
+	^ self root ,''

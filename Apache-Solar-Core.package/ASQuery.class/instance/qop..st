@@ -1,3 +1,3 @@
 accessing
-qop: aQueryOperation  
+qOp: aQueryOperation  
 	 self at:'q.op' put: aQueryOperation 
