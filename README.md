@@ -1,5 +1,5 @@
 # Solar
-an Apache Solr client API for Smalltalk
+an Apache Solr client API for Smalltalk. This work is in progress, core/collection/grouping... API are not implemented yet, you can perform queries, faceting, highlighting and spellchecking queries.
 
 ### install Solar
 ```Smalltalk
