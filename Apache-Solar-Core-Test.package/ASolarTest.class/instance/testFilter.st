@@ -2,7 +2,7 @@ tests
 testFilter
 	"an ASolarClient"
 	|solr|	
-	solr := ASolarClient host: '172.16.208.137' port:8983 username:'admin' password:'admin'.
+	solr := ASolarClient host: self defaultHost  port:8983 username:'admin' password:'admin'.
 	solr core:'techproducts'.
 	solr query:[ :query|
 				query q: ('manu'->'A*'); 
