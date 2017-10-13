@@ -17,4 +17,4 @@ queryFacetTest
 						query: #price->(300 TO:400);
 						query: #price->(400 TO:500);
 						query: #price->(500 TO:'*')]];
-			searchAndCallback:[:r| r inspect].	
+			callback:[:r| r inspect].	

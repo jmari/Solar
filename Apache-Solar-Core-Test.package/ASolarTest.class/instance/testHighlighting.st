@@ -17,5 +17,5 @@ testHighlighting
 								fl:#(#manu);
 								usePhraseHighlighter;
 								fragSize:300]
-						];
-			searchAndCallback:[:r| r inspect]
+						]
+			callback:[:r| r inspect]

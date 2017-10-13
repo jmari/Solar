@@ -11,7 +11,7 @@ queryTest8
 							 	#b->'log(popularity)'}.
 							#foo
 					 } ];
-			searchAndCallback:[:r| r inspect].
+			callback:[:r| r inspect].
 		
 	
 	solr edismaxQuery:[:query|
@@ -21,4 +21,4 @@ queryTest8
 							 	#inOrder->true}.
 							#name -> { 'john'. 'jon'. 'jonathan~' }.
 					 } ];
-			searchAndCallback:[:r| r inspect].	
+			callback:[:r| r inspect].	

@@ -13,4 +13,4 @@ queryTest10
 								#Foo.
 								#Bar }
 			];
-			searchAndCallback:[:r| r inspect].	
+			callback:[:r| r inspect].	

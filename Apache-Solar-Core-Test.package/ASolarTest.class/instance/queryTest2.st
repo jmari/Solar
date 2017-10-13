@@ -7,4 +7,4 @@ queryTest2
 	solr dismaxQuery:[:query|
 				query q: 'video'; 
 						fl: #( #name #score)];
-			searchAndCallback:[:r| r inspect]
+			callback:[:r| r inspect]

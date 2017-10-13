@@ -13,5 +13,5 @@ queryTest
 						mm:2;
 						start:0;
 						rows:10];
-			searchAndCallback:[:r| r inspect]
+			callback:[:r| r inspect]
 			"	solr query facet:[:f| f field:'cat']."

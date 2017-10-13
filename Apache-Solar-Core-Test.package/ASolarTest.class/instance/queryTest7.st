@@ -9,12 +9,12 @@ queryTest7
 					q: 'hello';
 					pf:'text';
 					boost:'popularity' ];
-			searchAndCallback:[:r| r inspect].
+			callback:[:r| r inspect].
 			
 	solr edismaxQuery:[:query|
 				query 
 					q: #('ipos' 'OR' 'video')];
-			searchAndCallback:[:r| r inspect].
+			callback:[:r| r inspect].
 			
 			
 	solr edismaxQuery:[:query|
@@ -24,4 +24,4 @@ queryTest7
 							 'text' -> 0.3};
 					sort: {  'div(popularity,price)'-> 'desc'.
 								'score' -> 'desc'}];
-			searchAndCallback:[:r| r inspect]
+			callback:[:r| r inspect]

@@ -9,7 +9,7 @@ queryTest6
 				query 
 					q: 'video';
 					fl: #('*' 'score')];
-			searchAndCallback:[:r| r inspect].
+			callback:[:r| r inspect].
 			
 	solr dismaxQuery:[:query|
 				query 
@@ -17,17 +17,17 @@ queryTest6
 					qf: {
 							#features ->20.0.
 							#text -> 0.3	}];
-			searchAndCallback:[:r| r inspect].
+			callback:[:r| r inspect].
 			
 	solr dismaxQuery:[:query|
 				query 
 					q: 'video';
 					fl: #( #name #score #inStock);
 					qt: #instock ];
-			searchAndCallback:[:r| r inspect].
+			callback:[:r| r inspect].
 			
 	solr dismaxQuery:[:query|
 				query 
 					q: #('belkin' 'ipod');
 					debugQuery ];
-			searchAndCallback:[:r| r inspect]
+			callback:[:r| r inspect]
