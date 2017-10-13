@@ -1,4 +1,0 @@
-factory
-hasSpell
-	
-	^ spell notNil

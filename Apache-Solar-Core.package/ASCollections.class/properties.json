@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ASCores",
+	"category" : "Apache-Solar-Core-Cores",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ASCollections",
+	"type" : "normal"
+}

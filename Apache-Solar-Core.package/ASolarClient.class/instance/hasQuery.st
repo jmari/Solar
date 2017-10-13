@@ -1,4 +1,4 @@
-factory
+testing
 hasQuery
 	
 	^ query notNil

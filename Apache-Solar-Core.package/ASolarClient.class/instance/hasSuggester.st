@@ -1,0 +1,4 @@
+testing
+hasSuggester
+	
+	^ suggester notNil

@@ -1,4 +1,4 @@
 client-api
-searchAndCallback: aBlock
+callback: aBlock
 
 	^ self get: self selectHandler  callback:aBlock

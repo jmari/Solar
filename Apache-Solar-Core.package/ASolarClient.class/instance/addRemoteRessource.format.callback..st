@@ -1,6 +1,7 @@
 client-api
 addRemoteRessource: urlOrFilePath format: format callback: aBlock 
-	"format of the resource. XML, CSV or JSON formats must be used."
+	"Ask to the server for adding remote file 
+	 format of the resource. XML, CSV or JSON formats must be used."
 	| handler |
 	(urlOrFilePath isKindOf: ZnUrl )  
 		ifTrue:[ self httpClient queryAt:'stream.url' put: urlOrFilePath asString ]

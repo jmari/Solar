@@ -1,0 +1,4 @@
+testing
+hasSpellchecker
+	
+	^ spell notNil

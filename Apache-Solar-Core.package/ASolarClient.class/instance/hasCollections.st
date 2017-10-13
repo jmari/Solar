@@ -1,0 +1,4 @@
+testing
+hasCollections
+	
+	^ collections notNil 

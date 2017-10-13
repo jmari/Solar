@@ -1,4 +1,4 @@
 factory
-spell
+spellchecker
 	
 	^ spell ifNil:[ spell := ASSpellcheck new ]

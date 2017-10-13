@@ -1,4 +1,4 @@
-factory
+testing
 hasGlobalParameters
 	
 	^ globalParameters notNil

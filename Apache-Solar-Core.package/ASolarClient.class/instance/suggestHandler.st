@@ -1,0 +1,3 @@
+private-handlers
+suggestHandler
+	^ #('suggest')

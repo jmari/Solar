@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "ASParameter",
+	"category" : "Apache-Solar-Core-Suggester",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"range",
+		"pivot",
+		"interval"
+	],
+	"name" : "ASSuggester",
+	"type" : "normal"
+}

@@ -1,3 +1,3 @@
 private-handlers
-collectionsHandler
+adminCollectionsHandler
 	^ #('admin' 'collections')

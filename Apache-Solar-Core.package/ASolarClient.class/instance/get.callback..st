@@ -5,7 +5,7 @@ get: handler callback: callback
 	self httpClient 
 		headerAt: 'accept' put: 'application/json; charset=utf-8'.
 	tmpPath := OrderedCollection new.
-	(handler = self collectionsHandler )
+	(handler = self adminCollectionsHandler or:[handler = self adminCoresHandler ] )
 					ifTrue:[ tmpPath addAll:self path; addAll: handler ]
 					ifFalse:[  tmpPath addAll: self path; add: self core; addAll: handler].
 					
@@ -14,7 +14,7 @@ get: handler callback: callback
 	self httpClient addPath: tmpPath asArray.
 	response := (self httpClient get;response).
 	self resetZnClientPath.
-	result := SCMaterializer materializeFromString:response contents. 
+	result := SCMaterializer materializeFromString:(response contents ifNil:['null']). 
 	response isSuccess 
 						ifTrue: [ callback value: result ]
 						ifFalse: [ self solrError: result ].

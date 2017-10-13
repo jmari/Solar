@@ -14,7 +14,10 @@
 		"query",
 		"globalParameters",
 		"fieldParameters",
-		"spell"
+		"spell",
+		"cores",
+		"collections",
+		"suggester"
 	],
 	"name" : "ASolarClient",
 	"type" : "normal"

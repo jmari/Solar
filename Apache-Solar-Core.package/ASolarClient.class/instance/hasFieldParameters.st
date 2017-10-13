@@ -1,4 +1,4 @@
-factory
+testing
 hasFieldParameters
 	
 	^ fieldParameters notNil
