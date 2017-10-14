@@ -6,3 +6,4 @@ build
 	self hasSpellchecker ifTrue:[self httpClient queryAddWithDuplicatesAll:  self spellchecker build].
 	self hasCoresOrCollections ifTrue:[self httpClient queryAddWithDuplicatesAll:  self cores ].
 	self hasSuggester ifTrue:[self httpClient queryAddWithDuplicatesAll:  self suggester ].
+	self hasTerms ifTrue:[self httpClient queryAddWithDuplicatesAll:  self terms ].

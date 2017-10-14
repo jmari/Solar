@@ -17,7 +17,8 @@
 		"spell",
 		"cores",
 		"collections",
-		"suggester"
+		"suggester",
+		"terms"
 	],
 	"name" : "ASolarClient",
 	"type" : "normal"
