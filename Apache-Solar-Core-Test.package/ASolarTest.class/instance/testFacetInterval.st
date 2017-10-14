@@ -3,8 +3,9 @@ testFacetInterval
 	"an ASolarClient"
 	|solr|	
 	solr := ASolarClient host: self defaultHost  port:8983 username:'admin' password:'admin'.
-	solr core:'techproducts'.
-	solr 
+	
+	solr  
+		core:'techproducts';
 		query:[:q| q 
 						q:'*:*';
 						facet:[ :facet|facet interval:'price']];

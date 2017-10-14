@@ -3,11 +3,12 @@ testRangeFaceting
 	"an ASolarClient"
 	|solr|	
 	solr := ASolarClient host: self defaultHost  port:8983 username:'admin' password:'admin'.
-	solr core:'techproducts'.
 	
 	"http://localhost:8983/solr/select?q=*:*&rows=0&facet=true&facet.range=price&   facet.range.start=0&facet.range.end=400&facet.range.gap=100"
 	
-	solr dismaxQuery:[:query|
+	solr 	  
+		core:'techproducts'; 
+		dismaxQuery:[:query|
 			query
 				q:'*'->'*'; 
 				rows:8;
@@ -17,4 +18,4 @@ testRangeFaceting
 										start:0;
 										end:400;
 										gap:100]]]
-			callback:[:r| r inspect].	
+		callback:[:r| r inspect].	

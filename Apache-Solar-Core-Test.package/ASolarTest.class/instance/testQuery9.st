@@ -3,9 +3,9 @@ testQuery9
 	"an ASolarClient"
 	|solr|	
 	solr := ASolarClient host:self defaultHost  port:8983 username:'admin' password:'admin'.
-	solr core:'techproducts'.
 	
-	solr edismaxQuery:[:query|
+	solr  core:'techproducts';
+			edismaxQuery:[:query|
 				query 
 					q: { 
 							{ 	#complexphrase.

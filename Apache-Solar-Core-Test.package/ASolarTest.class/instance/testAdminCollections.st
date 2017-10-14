@@ -4,7 +4,6 @@ testAdminCollections
 	|solr|	
 	solr := ASolarClient host:self defaultHost  port:8983 username:'admin' password:'admin'.
 
-	
 	solr collections: [:collections|
 				collections
 					name: 'smalltalk-collection';

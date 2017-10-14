@@ -4,8 +4,10 @@ testHighlighting
 	
 	|solr|	
 	solr := ASolarClient host: self defaultHost  port:8983 username:'admin' password:'admin'.
-	solr core:'techproducts'.
-	solr query:[ :query|
+
+	solr  
+		core:'techproducts'; 
+		query:[ :query|
 				query q: ('manu'->'A*'); 
 						fl: #( #name #manu #inStock #price);
  						qf: {	'name'! 0.2.
