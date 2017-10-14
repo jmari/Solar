@@ -6,7 +6,6 @@ post: aUrl file:fileReference callback: aBlock
 	stream binary.
 	type := ZnMimeType forFilenameExtension: (ZnFileSystemUtils extensionFor: fileReference).
 	length := ZnFileSystemUtils fileSizeFor: fileReference.
-	
 
 	self httpClient queryAt:'wt' put:'json'.	
 	^ self post:aUrl 

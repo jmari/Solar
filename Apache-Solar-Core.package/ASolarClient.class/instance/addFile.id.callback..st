@@ -11,7 +11,7 @@ addFile: aFileHandler id: anId callback: aBlock
 					yourself.
 	
 	anId 
-		ifNil:[ self httpClient queryAt:'literal.id' put: aFileHandler fullPath  asString]
+		ifNil:[ self httpClient queryAt:'literal.id' put: aFileHandler fullName  asString]
 		ifNotNil:[ self httpClient queryAt:'literal.id' put: anId].
 						
 	^ self post: url file: aFileHandler callback: aBlock
