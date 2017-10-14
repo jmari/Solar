@@ -15,9 +15,11 @@ Some examples:
 ```Smalltalk
 	|solr|	
 	solr := ASolarClient host: '172.16.208.136' port:8983 username:'admin' password:'admin'.
-	solr core:'techproducts'.
 	
-	solr edismaxQuery:[:query|
+	
+	solr 
+		core:'techproducts';
+		edismaxQuery:[:query|
 				query 
 					q: { 
 							{ 	#complexphrase.
@@ -33,7 +35,9 @@ Some examples:
 	solr := ASolarClient host: '172.16.208.136' port:8983 username:'admin' password:'admin'.
 	solr core:'techproducts'.
 	
-	solr dismaxQuery:[:query|
+	solr 
+		core:'techproducts';
+		dismaxQuery:[:query|
 			query
 				q:'*'; 
 				facet:[:f|
