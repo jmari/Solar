@@ -1,5 +1,5 @@
 # Solar
-an Apache Solr client API for Smalltalk. This work is in progress, core/collection/grouping... API are not implemented yet, you can perform queries, faceting, highlighting and spellchecking queries.
+an Apache Solr client API for Smalltalk. This work is in progress but you can perform queries, faceting, highlighting and spellchecking queries, admin cores and collections.
 
 ### install Solar
 ```Smalltalk
@@ -23,8 +23,8 @@ Some examples:
 							{ 	#complexphrase.
 							 	#inOrder->true}.
 							#name -> '"(john jon jonathan~) peters*"'.
-					 	} ];
-			searchAndCallback:[:r| r inspect].
+					 	} ]
+			callback:[:r| r inspect].
     
 ```
 ### Solar faceting query
@@ -43,8 +43,8 @@ Some examples:
 						query: #price->(200 TO:300);
 						query: #price->(300 TO:400);
 						query: #price->(400 TO:500);
-						query: #price->(500 TO:'*')]];
-			searchAndCallback:[:r| r inspect].	
+						query: #price->(500 TO:'*')]]
+			callback:[:r| r inspect].	
     
 ```
 More examples in the test package
