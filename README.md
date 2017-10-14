@@ -15,8 +15,6 @@ Some examples:
 ```Smalltalk
 	|solr|	
 	solr := ASolarClient host: '172.16.208.136' port:8983 username:'admin' password:'admin'.
-	
-	
 	solr 
 		core:'techproducts';
 		edismaxQuery:[:query|
@@ -33,8 +31,6 @@ Some examples:
 ```Smalltalk
 	|solr|	
 	solr := ASolarClient host: '172.16.208.136' port:8983 username:'admin' password:'admin'.
-	solr core:'techproducts'.
-	
 	solr 
 		core:'techproducts';
 		dismaxQuery:[:query|
