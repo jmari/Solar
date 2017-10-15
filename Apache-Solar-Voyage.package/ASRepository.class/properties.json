@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "VORepository",
+	"category" : "Apache-Solar-Voyage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"indexForClass",
+		"uuidProvider",
+		"sortingIndexes",
+		"maxObjectsInMem",
+		"collection",
+		"solarClient"
+	],
+	"name" : "ASRepository",
+	"type" : "normal"
+}
