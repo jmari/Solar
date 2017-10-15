@@ -2,7 +2,7 @@ as yet unclassified
 queryTest
 	"an ASolarClient"
 	|solr|	
-	solr := ASolarClient host: '172.16.208.136' port:8983 username:'admin' password:'admin'.
+	solr := ASolarClient host: '172.16.208.136' port:8983 userName:'admin' password:'admin'.
 	solr core:'techproducts'.
 	solr query:[ :query|
 				query q: ('title_t'->'Title*'); 

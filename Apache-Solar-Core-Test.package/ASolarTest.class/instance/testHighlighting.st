@@ -3,7 +3,7 @@ testHighlighting
 	"hl=true&hl.snippets=5&hl.fl=content&hl.usePhraseHighlighter=true&hl.fragsize=300"
 	
 	|solr|	
-	solr := ASolarClient host: self defaultHost  port:8983 username:'admin' password:'admin'.
+	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 
 	solr  
 		core:'techproducts'; 

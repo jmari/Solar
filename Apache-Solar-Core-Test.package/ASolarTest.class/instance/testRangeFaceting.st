@@ -2,7 +2,7 @@ tests
 testRangeFaceting
 	"an ASolarClient"
 	|solr|	
-	solr := ASolarClient host: self defaultHost  port:8983 username:'admin' password:'admin'.
+	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 	
 	"http://localhost:8983/solr/select?q=*:*&rows=0&facet=true&facet.range=price&   facet.range.start=0&facet.range.end=400&facet.range.gap=100"
 	

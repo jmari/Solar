@@ -2,7 +2,7 @@ as yet unclassified
 queryTest8
 	"an ASolarClient"
 	|solr|	
-	solr := ASolarClient host: '172.16.208.136' port:8983 username:'admin' password:'admin'.
+	solr := ASolarClient host: '172.16.208.136' port:8983 userName:'admin' password:'admin'.
 	solr core:'techproducts'.
 	solr edismaxQuery:[:query|
 				query 

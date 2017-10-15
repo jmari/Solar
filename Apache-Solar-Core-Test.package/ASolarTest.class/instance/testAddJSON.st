@@ -1,13 +1,14 @@
 adding
-addTest
+testAddJSON
+
 	
 	| solr docs |
 	docs := OrderedCollection new.
-	1 to:10 do:[:each| docs add: { '_id' -> (25 + each).
+	1 to:10 do:[:each| docs add: { 'id' -> (each + 100000).
 											'title_t' -> ('Title'  , each asString).
 											'description_t' -> ('Text ' , each asString ,'Alice')} asSCJsonObject].
 
-	solr := ASolarClient host: '172.16.208.136' port:8983 userName:'admin' password:'admin'.
+	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 	solr 
 			core:'techproducts';
 			autoCommit;

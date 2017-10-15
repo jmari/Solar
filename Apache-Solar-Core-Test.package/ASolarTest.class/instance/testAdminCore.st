@@ -2,7 +2,7 @@ tests
 testAdminCore
 	"an ASolarClient"
 	|solr|	
-	solr := ASolarClient host:self defaultHost  port:8983 username:'admin' password:'admin'.
+	solr := ASolarClient host:self defaultHost  port:8983 userName:'admin' password:'admin'.
 
 	
 	solr cores: [:cores|
