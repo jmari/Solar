@@ -1,7 +1,8 @@
 client-api
-update:docs callback: aBlock
+remove: aFieldOrAlistOfIds callback: aBlock
+	"removes all the ocurrences "
 	| url entity jsonString oc|
-	jsonString := self serializer serialize: docs.
+	jsonString := self serializer serialize: aFieldOrAlistOfIds.
 	entity := (ZnStringEntity text: jsonString) contentType: ZnMimeType applicationJson.
 	
 	oc := OrderedCollection new.
@@ -9,7 +10,7 @@ update:docs callback: aBlock
 	url := oc 
 					addAll:self path ;
 					add:self core;
-					addAll: self updateJSONHandler;
+					addAll: self updateHandler;
 					yourself.
 
 	^ self post: url entity:entity callback:aBlock

@@ -8,6 +8,6 @@
 	"instvars" : [
 		"root"
 	],
-	"name" : "ASParameter",
+	"name" : "ASParameterCollection",
 	"type" : "normal"
 }

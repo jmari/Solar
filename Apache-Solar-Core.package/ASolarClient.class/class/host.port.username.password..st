@@ -1,5 +1,5 @@
 connection open/close
-host: host port:port username: username password: password
+host: host port:port userName: username password: password
 	| client |
 
 	client := self basicNew.

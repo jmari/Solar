@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ASParameter",
+	"super" : "ASParameterCollection",
 	"category" : "Apache-Solar-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

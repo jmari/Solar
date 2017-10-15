@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "ASParameter",
+	"super" : "ASParameterCollection",
 	"category" : "Apache-Solar-Core-Facet",
 	"classinstvars" : [ ],
 	"pools" : [ ],
@@ -8,7 +8,8 @@
 	"instvars" : [
 		"range",
 		"pivot",
-		"interval"
+		"interval",
+		"serializer"
 	],
 	"name" : "ASFacet",
 	"type" : "normal"

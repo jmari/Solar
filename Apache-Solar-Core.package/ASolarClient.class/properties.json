@@ -18,7 +18,8 @@
 		"cores",
 		"collections",
 		"suggester",
-		"terms"
+		"terms",
+		"serializer"
 	],
 	"name" : "ASolarClient",
 	"type" : "normal"

@@ -1,0 +1,3 @@
+private-handlers
+schemaHandler
+	^ #('schema')

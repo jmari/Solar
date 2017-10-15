@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ASQuery",
-	"category" : "Apache-Solar-Core-Spellcheck",
+	"category" : "Apache-Solar-Core-Others",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

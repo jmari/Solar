@@ -3,6 +3,6 @@ resetZnClientPath
 "	|url|
 	url := self httpClient request url."
 	self httpClient url: ''.
-	query:= globalParameters:= fieldParameters :=collections := spell := cores:= suggester:= nil
+	query:= globalParameters:= fieldParameters :=collections := spell := cores:= suggester:= terms :=nil
 	
 "	url hasQuery ifTrue:[self httpClient request url queryAddAll: url query]"

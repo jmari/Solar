@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ASCores",
-	"category" : "Apache-Solar-Core-Cores",
+	"category" : "Apache-Solar-Core-Others",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
