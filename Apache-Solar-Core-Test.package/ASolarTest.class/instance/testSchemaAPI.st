@@ -7,16 +7,16 @@ testSchemaAPI
 	
 	solr 
 			core:'techproducts';
-			schemaName: [:r| r inspect];
-			schemaVersion: [:r| r inspect];		
-			schemaSimilarity: [:r| r inspect];	
-			schemaUniqueKey:  [:r| r inspect];	
-			schemaDefaultOperatorForQueryParser: [:r| r inspect];
-			currentSchema:[:r| r inspect];
-			schemaFields: [:r| r inspect];
-			schemaFields: 'author' parameters: [:p|p includeDynamic] callback: [:r| r inspect];
-			schema:{
-    			'add-field'->{
+			schema:[:s| s current] callback:[:r| r inspect];
+			schema:[:s| s version] callback:[:r| r inspect];	
+			schema:[:s| s similarity ] callback:[:r| r inspect];	
+			schema:[:s| s uniqueKey] callback:[:r| r inspect];	
+			schema:[:s| s defaultOperatorForQueryParser ] callback:[:r| r inspect];	
+			schema:[:s| s fields ] callback:[:r| r inspect];	
+			schema:[:s| s field:'author';
+							  includeDynamic ] callback:[:r| r inspect];	
+			
+			modifySchema:{'d-field'->{
        			'name'->'sell-by'.
        			'type'->'tdate'.
        			'stored'->true }}
