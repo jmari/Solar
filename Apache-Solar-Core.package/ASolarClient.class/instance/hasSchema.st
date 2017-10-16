@@ -1,0 +1,4 @@
+testing
+hasSchema
+	
+	^ schema notNil 

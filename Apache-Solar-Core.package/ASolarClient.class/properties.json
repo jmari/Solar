@@ -19,7 +19,8 @@
 		"collections",
 		"suggester",
 		"terms",
-		"serializer"
+		"serializer",
+		"schema"
 	],
 	"name" : "ASolarClient",
 	"type" : "normal"

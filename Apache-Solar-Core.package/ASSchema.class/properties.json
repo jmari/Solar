@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ASParameterCollection",
+	"category" : "Apache-Solar-Core-Schemes",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"path",
+		"handler"
+	],
+	"name" : "ASSchema",
+	"type" : "normal"
+}

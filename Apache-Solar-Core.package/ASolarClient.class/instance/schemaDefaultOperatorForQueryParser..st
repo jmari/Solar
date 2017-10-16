@@ -1,3 +1,0 @@
-schema-api
-schemaDefaultOperatorForQueryParser: aBlock
-	self get: self schemaSolrQueryParserDefaultOperatorHandler callback: aBlock

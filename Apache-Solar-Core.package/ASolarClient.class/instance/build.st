@@ -7,3 +7,4 @@ build
 	self hasCoresOrCollections ifTrue:[self httpClient queryAddWithDuplicatesAll:  self cores ].
 	self hasSuggester ifTrue:[self httpClient queryAddWithDuplicatesAll:  self suggester ].
 	self hasTerms ifTrue:[self httpClient queryAddWithDuplicatesAll:  self terms ].
+	self hasSchema ifTrue:[self httpClient queryAddWithDuplicatesAll:  self schema ].
