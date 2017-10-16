@@ -1,9 +1,17 @@
 http
 post: urlArray entity:entity callback:aBlock
-	| response result|
-
+	| response result url  |
+	"Adds a files and puts its file path as ID"
+	url := OrderedCollection new.
+	url  
+		addAll:self path ;
+		add:self core;
+		addAll: urlArray.
+		
+	self httpClient queryAt:'wt' put:'json'.
+	
 	response := ( self httpClient 
-									addPath: urlArray;
+									addPath: url;
 									entity: entity;
 									post;
 									response ).

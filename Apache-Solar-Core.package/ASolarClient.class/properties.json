@@ -20,7 +20,10 @@
 		"suggester",
 		"terms",
 		"serializer",
-		"schema"
+		"schema",
+		"httpMethod",
+		"httpHandler",
+		"httpEntity"
 	],
 	"name" : "ASolarClient",
 	"type" : "normal"

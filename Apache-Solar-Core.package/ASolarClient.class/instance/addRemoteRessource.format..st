@@ -1,5 +1,5 @@
 client-api
-addRemoteRessource: urlOrFilePath format: format callback: aBlock 
+addRemoteRessource: urlOrFilePath format: format 
 	"Ask to the server for adding remote file 
 	 format of the resource. XML, CSV or JSON formats must be used."
 	| handler |
@@ -11,4 +11,7 @@ addRemoteRessource: urlOrFilePath format: format callback: aBlock
 	(format = 'xml') ifFalse:[handler add: format]. 
 	self httpClient queryAt:'stream.contentType' put: 'text/plain;charset=utf-8'.
 	self httpClient queryAt:'literal.id' put: urlOrFilePath asString stringhash.
-	self get: handler callback: aBlock 
+	
+	httpMethod := #GET.
+	httpHandler := handler.	
+		

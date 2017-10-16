@@ -1,3 +1,8 @@
-factory
+client-api
 collections: aBlock
-	aBlock value: self collections 
+	"call admin handles for cores and collections"
+	aBlock value: self collections. 
+	httpMethod := #GET.
+	httpHandler := self cores handler.	
+
+	

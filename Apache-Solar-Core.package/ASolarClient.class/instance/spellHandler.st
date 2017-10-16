@@ -1,3 +1,0 @@
-private-handlers
-spellHandler
-	^ #('spell')

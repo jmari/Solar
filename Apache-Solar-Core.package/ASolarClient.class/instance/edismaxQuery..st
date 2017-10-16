@@ -1,4 +1,6 @@
-factory
-edismaxQuery: aBlockWithQuery
+client-api
+edismaxQuery: aBlockWithQuery 
 	
-	aBlockWithQuery value: self edismaxQuery
+	aBlockWithQuery value: self edismaxQuery.
+	httpMethod := #GET.
+	httpHandler := self selectHandler.

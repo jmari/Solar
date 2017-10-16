@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "ASDismaxQuery",
-	"category" : "Apache-Solar-Core",
+	"category" : "Apache-Solar-Core-Queries",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
