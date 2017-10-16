@@ -9,5 +9,5 @@ testTerms
 			core:'techproducts';
 			terms: [:terms|
 				terms
-					fl: 'name']
+					fl: 'name'];
 			callback:[:r| r inspect].	

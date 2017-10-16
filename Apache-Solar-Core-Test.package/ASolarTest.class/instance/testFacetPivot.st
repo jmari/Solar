@@ -16,5 +16,5 @@ testFacetPivot
 						query: { {#tag->#q1} asASLocalParameters.
 									#price->(0 TO: 100)}; 
 						pivot:[:pivot| pivot <- {{ #query->#q1} asASLocalParameters.
-															  'cat,inStock'}]]]
+															  'cat,inStock'}]]];
 			callback:[:r| r inspect].	

@@ -10,5 +10,5 @@ testAdminCore
 					name: 'smalltalk-core';
 					configSet:#basic_configs;
 					create 
-					 ]
+					 ];
 			callback:[:r| r inspect].	

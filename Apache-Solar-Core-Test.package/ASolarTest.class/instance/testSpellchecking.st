@@ -8,10 +8,10 @@ testSpellchecking
 eck=true&spellcheck.collateParam.q.op=AND"
 	solr  
 		core:'techproducts';
-		spellcheck: [:spell|
+		spellchecker: [:spell|
 				spell 
 					df: 'text';
 					q:'delll+ultra+sharp';
-					collateParam:[:query| query qOp:'AND' ]] 
-			callback:[:r| r inspect].
+					collateParam:[:query| query qOp:'AND' ]];
+		callback:[:r| r inspect].
 		

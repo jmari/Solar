@@ -10,4 +10,5 @@ addRemoteRessources
 	solr 
 		core:'techproducts';
 		autoCommit;
-		addRemoteRessource: ressource format:'csv' callback:[:result| result inspect]
+		addRemoteRessource: ressource format:'csv';
+		callback:[:result| result inspect]

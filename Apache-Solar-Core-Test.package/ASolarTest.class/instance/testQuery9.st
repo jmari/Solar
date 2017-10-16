@@ -11,5 +11,5 @@ testQuery9
 							{ 	#complexphrase.
 							 	#inOrder->true}.
 							#name -> '"(john jon jonathan~) peters*"'.
-					 	} ]
+					 	} ];
 			callback:[:r| r inspect].	

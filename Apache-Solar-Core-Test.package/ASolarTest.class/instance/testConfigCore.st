@@ -17,5 +17,5 @@ testConfigCore
       						'name'-> '/mypath'.
       						'class'->'solr.DumpRequestHandler'.
       						'defaults'-> { 'x'->'y'. 'a'->'b'. 'indent'->true }.
-      					 'useParams'->'x'} }  
-			callback:[:r| r inspect].	
+      					 'useParams'->'x'} }  ;
+		callback:[:r| r inspect].	

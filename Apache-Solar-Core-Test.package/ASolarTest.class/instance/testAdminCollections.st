@@ -10,5 +10,5 @@ testAdminCollections
 					numShards:2;
 					replicationFactor:1;
 					create 
-					 ]
+					 ];
 			callback:[:r| r inspect].	

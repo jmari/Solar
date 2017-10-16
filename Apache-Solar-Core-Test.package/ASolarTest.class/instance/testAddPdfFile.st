@@ -8,4 +8,5 @@ testAddPdfFile
 	solr 
 			core:'smalltalk-core';
 			autoCommit;
-			addFile: 'DB5.pdf' asFileReference  callback:[:result| result inspect]
+			addFile: 'DB5.pdf' asFileReference;
+			callback:[:result| result inspect]

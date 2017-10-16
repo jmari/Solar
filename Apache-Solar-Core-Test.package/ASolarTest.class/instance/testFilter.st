@@ -14,5 +14,5 @@ testFilter
 						fq: #price -> (0 TO: 600);
 						mm:2;
 						start:0;
-						rows:10]
+						rows:10];
 			callback:[:r| r inspect]

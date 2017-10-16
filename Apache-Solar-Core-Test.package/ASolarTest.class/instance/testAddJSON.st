@@ -12,4 +12,5 @@ testAddJSON
 	solr 
 			core:'techproducts';
 			autoCommit;
-			add: docs asArray callback:[:result| result inspect]
+			add: docs asArray;
+			callback:[:result| result inspect]

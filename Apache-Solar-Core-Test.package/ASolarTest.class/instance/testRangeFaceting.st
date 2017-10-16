@@ -17,5 +17,5 @@ testRangeFaceting
 									r 	<-'price';
 										start:0;
 										end:400;
-										gap:100]]]
+										gap:100]]];
 		callback:[:r| r inspect].	

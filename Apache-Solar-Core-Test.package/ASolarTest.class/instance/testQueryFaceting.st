@@ -17,5 +17,5 @@ testQueryFaceting
 						query: #price->(200 TO:300);
 						query: #price->(300 TO:400);
 						query: #price->(400 TO:500);
-						query: #price->(500 TO:'*')]]
+						query: #price->(500 TO:'*')]];
 		callback:[:r| r inspect].	
