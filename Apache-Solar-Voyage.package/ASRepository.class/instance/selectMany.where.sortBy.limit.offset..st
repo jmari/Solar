@@ -8,7 +8,7 @@ selectMany: aClass where: queryOptions sortBy: sortOptions limit: limit offset: 
 								queryOptions ifNotNil:[query q:queryOptions].
 								sortOptions ifNotNil:[query sort: sortOptions].
 								limit ifNotNil:[query rows: limit].
-								offset ifNotNil:[query start: offset]]
+								offset ifNotNil:[query start: offset]];
 			callback:[:r| r ].	
 				
 			

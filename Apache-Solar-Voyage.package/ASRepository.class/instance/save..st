@@ -4,4 +4,5 @@ save: aDoc
 
 	^ self solarClient 
 				core:self collection;
-				add: aDoc callback: [ :response| response ]
+				add: aDoc;
+				callback: [ :response| response ]
