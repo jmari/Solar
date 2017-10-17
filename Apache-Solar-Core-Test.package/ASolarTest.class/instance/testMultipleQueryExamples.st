@@ -1,15 +1,16 @@
-as yet unclassified
-queryTest7
+tests
+testMultipleQueryExamples
 	"an ASolarClient"
 	|solr|	
-	solr := ASolarClient host: '172.16.208.136' port:8983 userName:'admin' password:'admin'.
-	solr core:'techproducts'.
-	solr edismaxQuery:[:query|
+	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
+	solr 
+		core:'techproducts';
+		edismaxQuery:[:query|
 				query 
 					q: 'hello';
 					pf:'text';
 					boost:'popularity' ];
-			callback:[:r| r inspect].
+		callback:[:r| r inspect].
 			
 	solr edismaxQuery:[:query|
 				query 
@@ -20,8 +21,8 @@ queryTest7
 	solr edismaxQuery:[:query|
 				query 
 					q:'video';
-					qf: {  'features'->20.0.
-							 'text' -> 0.3};
+					qf: {  'features'!20.0.
+							 'text'!0.3};
 					sort: {  'div(popularity,price)'-> 'desc'.
 								'score' -> 'desc'}];
 			callback:[:r| r inspect]

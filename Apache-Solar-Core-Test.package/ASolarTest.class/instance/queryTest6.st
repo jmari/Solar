@@ -15,8 +15,8 @@ queryTest6
 				query 
 					q: 'video';
 					qf: {
-							#features ->20.0.
-							#text -> 0.3	}];
+							#features!20.0.
+							#text!0.3	}];
 			callback:[:r| r inspect].
 			
 	solr dismaxQuery:[:query|
