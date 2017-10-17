@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "ASParameterCollection",
-	"category" : "Apache-Solar-Core",
+	"category" : "Apache-Solar-Core-Facet",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "OverRequest",
+	"name" : "ASOverRequest",
 	"type" : "normal"
 }

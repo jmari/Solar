@@ -9,7 +9,8 @@
 		"range",
 		"pivot",
 		"interval",
-		"serializer"
+		"serializer",
+		"overRequest"
 	],
 	"name" : "ASFacet",
 	"type" : "normal"
