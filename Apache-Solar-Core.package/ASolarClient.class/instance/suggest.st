@@ -1,4 +1,4 @@
 factory
-suggester
+suggest
 	
 	^ suggester ifNil:[ suggester := ASSuggester new ]

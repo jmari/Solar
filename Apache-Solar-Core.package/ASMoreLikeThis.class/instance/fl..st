@@ -1,3 +1,4 @@
 accessing
-fl:  fieldList
-	 self at:'fl' put: fieldList
+fl:  collectionOfield
+	
+	 self at:'fl' put: collectionOfield asCommaString 

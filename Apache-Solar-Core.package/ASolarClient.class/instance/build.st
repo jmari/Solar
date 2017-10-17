@@ -5,6 +5,6 @@ build
 	self hasFieldParameters ifTrue:[ self httpClient queryAddWithDuplicatesAll: self  f build  ].
 	self hasSpellchecker ifTrue:[self httpClient queryAddWithDuplicatesAll:  self spellchecker build].
 	self hasCoresOrCollections ifTrue:[self httpClient queryAddWithDuplicatesAll:  self cores ].
-	self hasSuggester ifTrue:[self httpClient queryAddWithDuplicatesAll:  self suggester ].
+	self hasSuggester ifTrue:[self httpClient queryAddWithDuplicatesAll:  self suggest ].
 	self hasTerms ifTrue:[self httpClient queryAddWithDuplicatesAll:  self terms ].
 	self hasSchema ifTrue:[self httpClient queryAddWithDuplicatesAll:  self schema ].

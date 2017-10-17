@@ -1,5 +1,6 @@
-client-api
-suggest: aBlock 
-	aBlock value: self suggester.
+factory
+suggest: aBlockWithQuery
+
 	httpMethod := #GET.
-	httpHandler := self suggester handler.
+	httpHandler := self suggest handler.	
+	aBlockWithQuery value: self suggest
