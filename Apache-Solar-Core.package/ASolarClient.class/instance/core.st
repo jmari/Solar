@@ -1,3 +1,3 @@
 accessing
 core
-	^ core ifNil:[ core := '' ]
+	^ core 
