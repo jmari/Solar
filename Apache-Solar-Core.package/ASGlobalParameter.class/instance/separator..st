@@ -1,4 +1,3 @@
-csv
-separator: aChar
-
-	self at:'encapsulator' put: aChar asString
+accessing
+separator: aString
+	 self at:'separator' put: aString 

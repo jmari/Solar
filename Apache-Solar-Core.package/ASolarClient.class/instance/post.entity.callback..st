@@ -7,9 +7,10 @@ post: urlArray entity:entity callback:aBlock
 		addAll:self path ;
 		add:self core;
 		addAll: urlArray.
-		
+					
+	self build.
 	self httpClient queryAt:'wt' put:'json'.
-	
+
 	response := ( self httpClient 
 									addPath: url;
 									entity: entity;
