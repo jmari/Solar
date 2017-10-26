@@ -1,5 +1,5 @@
 tests
-test4AddCSV
+test3AddCSV
 
 	
 	| solr rows |
@@ -8,7 +8,7 @@ test4AddCSV
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 	
 	solr 
-			core:'samplecsv';
+			core:'demo';
 			addCSV: rows;
 			autoCommit;
 			header;

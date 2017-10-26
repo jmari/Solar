@@ -1,12 +1,12 @@
 tests
-test5QueryDemo
+test4QueryDemo
 
 	| solr |
 
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 		
 	solr 
-			core:'samplecsv';
+			core:'demo';
 			query:[:query| 
 						query 
 							q: 'title_t'->'black';

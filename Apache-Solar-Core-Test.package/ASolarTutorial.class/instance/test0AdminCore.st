@@ -1,5 +1,5 @@
 tests
-test1AdminCore
+test0AdminCore
 	"an ASolarClient"
 	|solr|	
 	solr := ASolarClient host:self defaultHost  port:8983 userName:'admin' password:'admin'.

@@ -1,5 +1,5 @@
 tests
-test3QueryJSON
+test2QueryJSON
 
 	
 	| solr |
