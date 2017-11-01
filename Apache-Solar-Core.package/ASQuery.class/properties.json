@@ -9,7 +9,8 @@
 		"facet",
 		"group",
 		"mlt",
-		"hl"
+		"hl",
+		"serializer"
 	],
 	"name" : "ASQuery",
 	"type" : "normal"
