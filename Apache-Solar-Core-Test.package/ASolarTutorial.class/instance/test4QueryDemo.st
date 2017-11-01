@@ -7,6 +7,7 @@ test4QueryDemo
 		
 	solr 
 			core:'demo';
+			debug;
 			query:[:query| 
 						query 
 							q: 'title_t'->'black';

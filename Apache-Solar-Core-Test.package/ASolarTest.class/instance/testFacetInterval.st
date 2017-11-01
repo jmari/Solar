@@ -14,6 +14,6 @@ testFacetInterval
 				facet:[:facet| 
 					facet interval:[:interv| 
 						interv 	set:'[0,100]';
-									set:'[100,200]']]]	;				
+									set:'(100,200]']]]	;				
 		callback:[:r| r inspect].	
 			
