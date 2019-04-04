@@ -1,3 +1,0 @@
-accessing
-handler
-	^ #('admin' 'collections')

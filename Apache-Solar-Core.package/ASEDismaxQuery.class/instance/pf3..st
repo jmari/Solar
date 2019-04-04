@@ -1,5 +1,0 @@
-as yet unclassified
-pf3:  aQuery
-	"String format 'fieldOne^2.3 fieldTwo fieldThree^0.4'
-	 or an array of associations {fieldOne->2.3. fieldTwo->1.0. fieldThree->0.4}"
-	 self at:'qf3'  put:  (ASQueryString from: aQuery)

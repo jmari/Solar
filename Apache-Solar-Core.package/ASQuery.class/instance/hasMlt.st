@@ -1,3 +1,0 @@
-factory
-hasMlt
-	^ mlt notNil 

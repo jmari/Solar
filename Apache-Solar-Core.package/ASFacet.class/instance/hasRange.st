@@ -1,3 +1,0 @@
-testing
-hasRange
-	^ range notNil

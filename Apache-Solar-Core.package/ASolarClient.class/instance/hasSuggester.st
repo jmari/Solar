@@ -1,4 +1,0 @@
-testing
-hasSuggester
-	
-	^ suggester notNil

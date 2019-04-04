@@ -1,4 +1,0 @@
-testing
-hasSpellchecker
-	
-	^ spell notNil

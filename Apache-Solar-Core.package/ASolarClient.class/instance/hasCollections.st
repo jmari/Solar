@@ -1,4 +1,0 @@
-testing
-hasCollections
-	
-	^ collections notNil 

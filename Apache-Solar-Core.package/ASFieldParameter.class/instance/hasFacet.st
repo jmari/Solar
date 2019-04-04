@@ -1,4 +1,0 @@
-facet
-hasFacet
-	
-	^ facet  notNil

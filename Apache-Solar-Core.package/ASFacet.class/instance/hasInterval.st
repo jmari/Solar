@@ -1,3 +1,0 @@
-testing
-hasInterval
-	^ interval notNil

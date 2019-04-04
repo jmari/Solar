@@ -1,4 +1,0 @@
-testing
-hasTerms
-	
-	^ terms notNil 

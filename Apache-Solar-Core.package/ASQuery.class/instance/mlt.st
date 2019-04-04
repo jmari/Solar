@@ -1,3 +1,0 @@
-factory
-mlt
-	 ^ self moreLikeThis 

@@ -1,4 +1,0 @@
-testing
-hasCoresOrCollections
-	
-	^ cores notNil

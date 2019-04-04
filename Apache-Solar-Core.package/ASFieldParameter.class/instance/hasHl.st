@@ -1,3 +1,0 @@
-accessing
-hasHl
-	 ^ hl notNil 

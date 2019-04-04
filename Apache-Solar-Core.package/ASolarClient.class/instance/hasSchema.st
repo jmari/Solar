@@ -1,4 +1,0 @@
-testing
-hasSchema
-	
-	^ schema notNil 

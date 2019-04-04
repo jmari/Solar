@@ -1,3 +1,0 @@
-testing
-hasPivot
-	^ pivot notNil

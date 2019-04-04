@@ -1,3 +1,0 @@
-private-handlers
-realTimeGetHandler
-	^ #( 'get' )

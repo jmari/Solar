@@ -1,3 +1,0 @@
-testing
-hasCore
-	^ core notNil
