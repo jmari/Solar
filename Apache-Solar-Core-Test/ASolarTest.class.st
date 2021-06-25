@@ -38,7 +38,7 @@ ASolarTest >> addTest [
 
 { #category : #configuration }
 ASolarTest >> defaultHost [
-	^ '172.16.208.142'
+	^ '172.16.208.143'
 ]
 
 { #category : #'as yet unclassified' }

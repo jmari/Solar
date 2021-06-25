@@ -22,8 +22,13 @@ ASolarTutorial >> csvContent [
 ]
 
 { #category : #adding }
+ASolarTutorial >> defaultCore [
+	^ 'new_core'
+]
+
+{ #category : #adding }
 ASolarTutorial >> defaultHost [
-	^ '172.16.208.142'
+	^ '172.16.208.143'
 ]
 
 { #category : #tests }
@@ -35,7 +40,7 @@ ASolarTutorial >> test0AdminCore [
 	
 	solr cores: [:cores|
 				cores
-					name: 'demo';
+					name: self defaultCore;
 					configSet:#basic_configs;
 					create 
 					 ];
@@ -55,13 +60,13 @@ ASolarTutorial >> test1AddJSON [
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 	
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			autoCommit;
 			add: doc;
 			callback:[:result| result inspect].
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:q| q q: 'id:book0'];
 			callback:[:result| result inspect].
 			
@@ -78,7 +83,7 @@ ASolarTutorial >> test23QueryPaging [
 
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:query| 
 						query 
 							q: #id->'book*';
@@ -99,7 +104,7 @@ ASolarTutorial >> test2QueryJSON [
 
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:q| q q: 'id'->'book1'];
 			callback:[:result| result inspect].
 			
@@ -115,7 +120,7 @@ ASolarTutorial >> test3AddCSV [
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 	
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			addCSV: rows;
 			autoCommit;
 			header;
@@ -134,7 +139,7 @@ ASolarTutorial >> test3Z1QuerySorting [
 
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:query| 
 						query 
 							q: #id->'book*';
@@ -155,7 +160,7 @@ ASolarTutorial >> test3Z2QueryPaging [
 
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:query| 
 						query 
 							q: #id->'book*';
@@ -178,7 +183,7 @@ ASolarTutorial >> test3Z3QueryCursorPaging [
 
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:query| 
 						query 
 							q: #id->'book*';
@@ -190,7 +195,7 @@ ASolarTutorial >> test3Z3QueryCursorPaging [
 			callback:[:result| result inspect.cursorMark := result nextCursorMark].
 			
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:query| 
 						query 
 							q: #id->'book*';
@@ -210,7 +215,7 @@ ASolarTutorial >> test4QueryDemo [
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			debug;
 			query:[:query| 
 						query 
@@ -228,7 +233,7 @@ ASolarTutorial >> test5ProximityQuery [
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:query| 
 						query 
 							q: #title_t-> ('Way Kings'~1);
@@ -250,7 +255,7 @@ ASolarTutorial >> test6BooleanQuery [
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:query| 
 						query 
 							q: #title_t-> {'Way'PLUS. 'added'} ;
@@ -272,7 +277,7 @@ ASolarTutorial >> test7BoostedQuery [
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 	"boost operator ^ is ! in smalltalk"	
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:query| 
 						query 
 							q:#title_t->{'Black'!10.
@@ -290,7 +295,7 @@ ASolarTutorial >> test8RangeQuery [
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 	"boost operator ^ is ! in smalltalk"	
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:query| 
 						query 
 							q:{
@@ -307,7 +312,7 @@ ASolarTutorial >> test9FilterQuery [
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 		
 	solr  
-		core:'demo';
+		core:self defaultCore;
 		query:[ :query|
 				query q: #title_t->'*'; 
 						fq: #pubyear_i->(1960 TO:1995)];
@@ -321,7 +326,7 @@ ASolarTutorial >> testA1RTGet [
 	solr := ASolarClient host: self defaultHost  port:8983 userName:'admin' password:'admin'.
 		
 	solr  
-		core:'demo';
+		core: self defaultCore;
 		realTimeGet: #(#book1 #book2);
 		callback:[:r| r inspect]
 ]
@@ -337,7 +342,7 @@ ASolarTutorial >> testA2JSONFaceting [
 
 		
 	solr 
-			core:'demo';
+			core:self defaultCore;
 			query:[:q| q 
 				q: ('*'->'*');
 				jsonFacet: { #top_authors -> { #terms -> { #field -> #author_s. #limit -> 5 } } }];
